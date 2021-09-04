@@ -1,5 +1,0 @@
-此类字体从 Apple 官网中的源代码中提取。
-
-https://www.apple.com.cn/wss/fonts?families=SF+Pro,v3|SF+Pro+Icons,v3
-
-https://www.apple.com.cn/wss/fonts?family=SF+Pro+SC&weights=300,400,500,600&v=1
