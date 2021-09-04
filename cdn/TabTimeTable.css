@@ -180,6 +180,11 @@ ul {
     border-top: 1px solid #ddd;
 }
 
+.high {
+    font-family: 'PF-Semibold-woff', 'SF-Pro-Heavy-woff';
+    color: royalblue;
+}
+
 .info.a {
     background-color: rgb(240, 82, 97);
 }

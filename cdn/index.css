@@ -84,6 +84,7 @@ marquee {
 
 h2 {
     font-family: 'PF-Semibold-woff', 'SF-Pro-Heavy-woff';
+    font-weight: 400;
     text-align: left;
     margin: 20px 0 20px;
 }
@@ -112,14 +113,6 @@ h2 a:hover {
     transition: 0.3s;
 }
 
-h3 {
-    font-family: 'PF-Semibold-woff', 'SF-Pro-Heavy-woff';
-    text-align: center;
-    margin-top: 20px;
-    font-size: 22px;
-    line-height: 48px;
-}
-
 .strlink {
     border-radius: 3px;
     /* font-weight: 700; */
@@ -142,25 +135,6 @@ h3 {
     background-color: #555;
     border-radius: 3px;
     transition: 0.3s;
-}
-
-h1 {
-    font-family: 'PF-Semibold-woff', 'SF-Pro-Heavy-woff';
-}
-
-h1 span {
-    font-size: 24px;
-}
-
-h3 span {
-    font-size: 16px;
-}
-
-p {
-    text-indent: 2em;
-    margin: 10px 100pt 10px;
-    width: 80%;
-    text-align: justify;
 }
 
 .high {
