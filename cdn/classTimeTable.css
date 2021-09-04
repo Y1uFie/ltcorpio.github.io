@@ -1,0 +1,208 @@
+/*课程表表头*/
+
+.ct-header {
+    display: flex;
+}
+
+
+/*课程表表头 > 子盒子*/
+
+.ct-header .ct-th {
+    width: 100%;
+    min-height: 42px;
+    text-align: center;
+    border-right: 2px solid #fff;
+    background-color: #f2f6f7;
+    padding: 4px 0;
+    border-radius: 4px;
+}
+
+.ct-header .ct-th:first-child {
+    width: 40px !important;
+    margin-right: 2px;
+}
+
+.ct-header .ct-th:last-child {
+    border-left: none;
+}
+
+
+/*设置激活后的样式*/
+
+.ct-header .ct-th.active {
+    height: auto;
+    /*box-sizing: border-box;!*设置边框为 内边框*!*/
+    border-bottom: 3px solid #23b7e5;
+    color: #23b7e5;
+}
+
+
+/*子盒子 span 设置块*/
+
+.ct-header .ct-th span {
+    display: block;
+}
+
+
+/*设置周几*/
+
+.ct-header .ct-th .title {
+    font-family: 'SF-Pro-Medium-woff', 'PF-Semibold-woff';
+    font-weight: 400;
+    letter-spacing: 3px;
+    /*设置字符间距*/
+    padding-left: 3px;
+}
+
+
+/*设置月日*/
+
+.ct-header .ct-th .day {
+    font-size: 14px;
+}
+
+.ct-body {
+    display: flex;
+}
+
+
+/*设置每列垂直排列*/
+
+.ct-body .ct-cr {
+    flex-direction: column;
+    width: 100%;
+}
+
+.ct-body .ct-cr:first-child {
+    margin-right: 2px;
+    width: 40px !important;
+    /* border-right: 2px solid #fff; */
+}
+
+.ct-body .ct-cr:first-child .ct-td {
+    background-color: #f2f6f7;
+}
+
+
+/*设置表格 小格子*/
+
+.ct-body .ct-cr .ct-td {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 4px;
+    min-height: 78px;
+    line-height: 22px;
+    cursor: pointer;
+    width: auto;
+    border-radius: 8px;
+}
+
+.ct-body .ct-cr .ct-td.kongbai {
+    cursor: unset;
+}
+
+
+/*跨1行的*/
+
+.ct-body .ct-cr .ct-td.col-1 {
+    height: 88px;
+}
+
+
+/*跨2行的*/
+
+.ct-body .ct-cr .ct-td.col-2 {
+    height: 177px;
+}
+
+
+/*跨3行的*/
+
+.ct-body .ct-cr .ct-td.col-3 {
+    height: 254px;
+}
+
+
+/*跨4行的*/
+
+.ct-body .ct-cr .ct-td.col-4 {
+    height: 354px;
+}
+
+
+/*“课程名字”*/
+
+.ct-body .ct-cr .ct-td .name {
+    font-size: 20px;
+    font-family: 'SF-Pro-Medium-woff', 'PF-Semibold-woff';
+    font-weight: 400;
+}
+
+
+/*上课地点 时间范围 授课教师*/
+
+.ct-body .ct-cr .ct-td .address,
+.ct-body .ct-cr .ct-td .limitTime,
+.ct-body .ct-cr .ct-td .teacher {
+    /*font-weight: 300;*/
+    font-size: 16px;
+}
+
+div[class*="bg-color-"] {
+    color: #fff;
+}
+
+.bg-color-1 {
+    background-color: rgb(240, 82, 97);
+}
+
+.bg-color-2 {
+    background-color: rgb(72, 168, 228);
+}
+
+.bg-color-3 {
+    background-color: rgb(82, 219, 154);
+}
+
+.bg-color-4 {
+    background-color: rgb(199, 139, 0);
+}
+
+.bg-color-5 {
+    background-color: rgb(0, 150, 136);
+}
+
+.bg-color-6 {
+    background-color: rgb(63, 81, 181);
+}
+
+.bg-color-7 {
+    background-color: rgb(121, 86, 73);
+}
+
+.bg-color-8 {
+    background-color: rgb(96, 125, 139);
+}
+
+.bg-color-9 {
+    background-color: rgb(103, 58, 183);
+}
+
+.bg-color-10 {
+    background-color: rgb(180, 149, 225);
+}
+
+.grade {
+    display: block;
+    font-size: 18px !important;
+    line-height: 32px;
+    margin: 16px;
+}
+
+.name {
+    padding: 12px 0 12px;
+}
