@@ -9,9 +9,6 @@
             7: "周日"
         };
 
-
-        //颜色集
-        //如果需要增加，请自行按照下列格式添加,并在 .css 文件写入对应的样式
         this.ColorList = [
             'bg-color-1',
             'bg-color-2',
@@ -27,9 +24,6 @@
     }
 
     ClassTimeTable.prototype = {
-        // constructor: ClassTimeTable,
-
-        //课程表信息配置
         Config: {
             max_day: 5,
             session: 10,
@@ -46,14 +40,12 @@
             }
         },
 
-        //生成基础表格
         creatBase: function() {
             var ct_header = document.querySelector(this.Config.selector + " > .ct-header"),
                 ct_body = document.querySelector(this.Config.selector + " > .ct-body"),
-                week_group_date = this.getDates(), //列出本周“月日”数组
+                week_group_date = this.getDates(),
                 html = '';
 
-            //生成基础表格
             for (let day = 0; day <= this.Config['max_day']; day++) {
                 if (day === 0) {
                     html = '<div class="ct-th" style="min-width: 26px; margin-right: 2px"></div>';
@@ -66,7 +58,7 @@
                         '<span class="day">' + week_group_date[day] + '</span>\n' +
                         '</div>';
                 }
-                ct_header.innerHTML += html; //插入 header
+                ct_header.innerHTML += html;
 
                 html = '<div class="ct-cr">';
                 for (let session = 0; session < this.Config['session']; session++) {
@@ -75,11 +67,10 @@
                     }
                 }
                 html += '</div>';
-                ct_body.innerHTML += html; //插入 body
+                ct_body.innerHTML += html;
             }
         },
 
-        //更新横跨 1、2、3...行的 css样式
         updateColCss: function() {
             let one = document.querySelector(this.Config['selector'] + " > div.ct-body > div:nth-child(1) > div:nth-child(1)").offsetHeight;
             var css = '.ct-body .ct-cr .ct-td.col-1 {height: ' + (one - 10) + 'px}' +
@@ -95,7 +86,6 @@
 
             var head = document.head || document.getElementsByTagName('head')[0];
             var style = document.createElement('style');
-            // style.type = 'text/css';
             if (style.styleSheet) {
                 style.styleSheet.cssText = css;
             } else {
@@ -104,7 +94,6 @@
             head.appendChild(style);
         },
 
-        //填充课程信息
         fillInfo: function() {
             var color_arr = {},
                 color_list = this.Config['colorList'] ? this.Config['colorList'] : this.ColorList,
@@ -114,21 +103,20 @@
                 for (let item in this.Config['data'][day]) {
                     html = '';
                     let day_item = this.Config['data'][day][item];
-                    item = parseInt(item); //当前节次
+                    item = parseInt(item);
 
                     if (!color_arr[day_item['name']]) {
                         color_arr[day_item['name']] = color_list[0];
-                        color_list.splice(0, 1); //删除用掉了的颜色数组
+                        color_list.splice(0, 1);
                     }
 
                     if (item > next) {
-                        //填充空白区域（就是没有课的区域）
                         kong = item - next;
                         html = '<div class="ct-td kongbai col-' + kong + '"></div>';
                     }
 
-                    var uuid = function(n) { // 生成n位长度的字符串
-                        var str = "abcdefghijklmnopqrstuvwxyz-_"; // 可以作为常量放到random外面
+                    var uuid = function(n) {
+                        var str = "abcdefghijklmnopqrstuvwxyz-_";
                         var result = "";
                         for (var i = 0; i < n; i++) {
                             result += str[parseInt(Math.random() * str.length)];
@@ -149,7 +137,6 @@
             }
         },
 
-        //获取本周 月日 数组
         getDates: function() {
             var currentDate = new Date();
             var timesStamp = currentDate.getTime();
@@ -175,19 +162,17 @@
             return dates
         },
 
-        //点击对应课程回调
         clickListener: function(callback) {
             var _ConfigData = this.Config['data'];
 
             document.querySelectorAll('div[data-index*=","]').forEach(function(ele, num) {
                 ele.addEventListener("click", function() {
                     var _arr = this.getAttribute("data-index").split(",");
-                    return callback(_ConfigData[_arr[0]][_arr[1]]); //回调
+                    return callback(_ConfigData[_arr[0]][_arr[1]]);
                 });
             });
         }
     };
-
 
     var classs = new ClassTimeTable();
     classs.setConfig({
@@ -317,10 +302,9 @@
             }
         }
     });
-    classs.creatBase(); //建立基础表格框架
-    classs.updateColCss(); //更新CSS样式，以适应各种屏幕
-    classs.fillInfo(); //填充课程信息
+    classs.creatBase();
+    classs.updateColCss();
+    classs.fillInfo();
     classs.clickListener(function(e) {
-        //点击课程回调
         console.log(e);
     });

@@ -11,7 +11,8 @@
     width: 100%;
     min-height: 42px;
     text-align: center;
-    border-right: 2px solid #fff;
+    margin-left: 2px;
+    margin-right: 2px;
     background-color: #f2f6f7;
     padding: 4px 0;
     border-radius: 4px;
@@ -19,21 +20,15 @@
 
 .ct-header .ct-th:first-child {
     width: 40px !important;
+    margin-left: 0px;
     margin-right: 2px;
 }
-
-.ct-header .ct-th:last-child {
-    border-left: none;
-}
-
-
-/*设置激活后的样式*/
 
 .ct-header .ct-th.active {
     height: auto;
     /*box-sizing: border-box;!*设置边框为 内边框*!*/
-    border-bottom: 3px solid #23b7e5;
-    color: #23b7e5;
+    color: #eee;
+    background-color: #555;
 }
 
 
@@ -71,9 +66,12 @@
 .ct-body .ct-cr {
     flex-direction: column;
     width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .ct-body .ct-cr:first-child {
+    margin-left: 0px;
     margin-right: 2px;
     width: 40px !important;
     /* border-right: 2px solid #fff; */
@@ -92,7 +90,6 @@
     flex-flow: column;
     text-align: center;
     border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
     padding: 4px;
     min-height: 78px;
     line-height: 22px;
