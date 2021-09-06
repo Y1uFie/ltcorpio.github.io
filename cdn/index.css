@@ -59,7 +59,7 @@ body {
 .time .NowTime {
     font-family: 'SF-Pro-Medium-woff', 'PF-Medium-woff';
     height: 40px;
-    background: #ddd;
+    background: #eee;
     line-height: 40px;
     text-align: center;
 }

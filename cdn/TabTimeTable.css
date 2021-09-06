@@ -40,7 +40,7 @@
 }
 
 body {
-    font-family: 'PF-Regular-woff', 'SF-Pro-Regular-woff', 'PF-Rd';
+    font-family: 'PF-Regular-woff', 'SF-Pro-Regular-woff';
     letter-spacing: .03em;
     width: 100%;
     margin: 0;
@@ -55,7 +55,7 @@ body {
 .time .NowTime {
     font-family: 'SF-Pro-Medium-woff', 'PF-Medium-woff';
     height: 40px;
-    background: #ddd;
+    background: #eee;
     line-height: 40px;
     text-align: center;
 }
@@ -81,10 +81,6 @@ body {
     display: flex;
 }
 
-a {
-    border-radius: 5px;
-}
-
 a:hover {
     font-weight: 400;
     color: #ddd;
@@ -93,17 +89,18 @@ a:hover {
 }
 
 a.tab {
+    border-radius: 4px;
     margin: 0 0.3rem;
     padding: 0.3rem 0.5rem 0.3rem;
     text-decoration: none;
     color: #999;
-    border-bottom: 0.15rem solid rgba(255, 255, 255, 0);
+    border-bottom: 0.16rem solid rgba(255, 255, 255, 0);
 }
 
 a.tab.active {
     background-color: #eee;
     color: #444;
-    border-bottom: 0.15rem solid #0e41b1;
+    border-bottom: 0.16rem solid #0e41b1;
 }
 
 a.tab:hover {
@@ -152,6 +149,7 @@ a.tab:hover {
 }
 
 .intext {
+    line-height: 24px;
     padding-left: 2rem;
     font-size: 95%;
 }
