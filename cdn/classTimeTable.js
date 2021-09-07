@@ -267,6 +267,16 @@
                     length: 2,
                     limitTime: '10:05-11:30'
                 },
+                5: {
+                    name: "大数据工作坊活动",
+                    teacher_name: '（结束时间视具体情况而定）',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 4,
+                    limitTime: '13:30-16:35'
+                },
                 9: {
                     name: "机器学习",
                     teacher_name: "陶剑文",
