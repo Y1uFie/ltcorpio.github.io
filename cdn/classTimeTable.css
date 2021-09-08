@@ -2,6 +2,8 @@
 
 .ct-header {
     display: flex;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -15,7 +17,7 @@
     margin-right: 2px;
     background-color: #f2f6f7;
     padding: 4px 0;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .ct-header .ct-th:first-child {
@@ -38,19 +40,13 @@
     display: block;
 }
 
-
-/*设置周几*/
-
 .ct-header .ct-th .title {
     font-family: 'SF-Pro-Medium-woff', 'PF-Semibold-woff';
     font-weight: 400;
-    letter-spacing: 3px;
-    /*设置字符间距*/
-    padding-left: 3px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding-left: 5px;
 }
-
-
-/*设置月日*/
 
 .ct-header .ct-th .day {
     font-size: 14px;
@@ -79,6 +75,7 @@
 
 .ct-body .ct-cr:first-child .ct-td {
     background-color: #f2f6f7;
+    margin-left: 0;
 }
 
 
@@ -89,7 +86,8 @@
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    border-top: 2px solid #fff;
+    margin-top: 2px;
+    margin-left: 1px;
     padding: 4px;
     min-height: 78px;
     line-height: 22px;
@@ -113,21 +111,21 @@
 /*跨2行的*/
 
 .ct-body .ct-cr .ct-td.col-2 {
-    height: 177px;
+    height: 166px !important;
 }
 
 
 /*跨3行的*/
 
 .ct-body .ct-cr .ct-td.col-3 {
-    height: 254px;
+    height: 254px !important;
 }
 
 
 /*跨4行的*/
 
 .ct-body .ct-cr .ct-td.col-4 {
-    height: 354px;
+    height: 342px !important;
 }
 
 
