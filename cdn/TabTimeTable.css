@@ -144,7 +144,7 @@ a.tab:hover {
 }
 
 .maininfo {
-    font-family: 'PF-Semibold-woff', 'SF-Pro-Heavy-woff', 'PF-Rd';
+    font-family: 'PF-Semibold-woff', 'SF-Pro-Heavy-woff';
     font-size: 18px;
 }
 
@@ -152,6 +152,10 @@ a.tab:hover {
     line-height: 24px;
     padding-left: 2rem;
     font-size: 95%;
+}
+
+.int-ttl {
+    font-family: 'PF-Medium-woff', 'SF-Pro-Medium-woff';
 }
 
 .footer {
@@ -224,4 +228,8 @@ ul {
 
 .info.j {
     background-color: rgb(180, 149, 225);
+}
+
+.info.fix {
+    background-color: snow;
 }

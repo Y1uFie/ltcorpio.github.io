@@ -189,7 +189,7 @@
                             num: '东 3#418'
                     },
                     length: 2,
-                    limitTime: '8:30-9:55'
+                    limitTime: '8:30—9:55'
                 },
                 3: {
                     name: "Java 程序设计",
@@ -199,7 +199,7 @@
                             num: '东 3#418'
                     },
                     length: 2,
-                    limitTime: '10:05-11:30'
+                    limitTime: '10:05—11:30'
                 },
                 5: {
                     name: "机器学习",
@@ -209,7 +209,7 @@
                             num: '东 3#426'
                     },
                     length: 2,
-                    limitTime: '13:30-14:55'
+                    limitTime: '13:30—14:55'
                 }
             },
             2: {
@@ -221,7 +221,7 @@
                             num: '东 3#426'
                     },
                     length: 2,
-                    limitTime: '8:30-9:55'
+                    limitTime: '8:30—9:55'
                 },
                 3: {
                     name: "大数据基础",
@@ -231,7 +231,7 @@
                             num: '东 3#426'
                     },
                     length: 2,
-                    limitTime: '10:05-11:30'
+                    limitTime: '10:05—11:30'
                 },
                 5: {
                     name: "计算机网络基础",
@@ -241,7 +241,7 @@
                             num: '东 3#411'
                     },
                     length: 2,
-                    limitTime: '13:30-14:55'
+                    limitTime: '13:30—14:55'
                 },
             },
             3: {
@@ -253,7 +253,7 @@
                             num: '东 3#426'
                     },
                     length: 2,
-                    limitTime: '13:30-14:55'
+                    limitTime: '13:30—14:55'
                 }
             },
             4: {
@@ -265,17 +265,17 @@
                             num: '东 3#418'
                     },
                     length: 2,
-                    limitTime: '10:05-11:30'
+                    limitTime: '10:05—11:30'
                 },
                 5: {
-                    name: "大数据工作坊活动",
-                    teacher_name: '（结束时间视具体情况而定）',
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '何颂颂／赵宝奇',
                     class: {
                         type: "东校区",
                             num: '东 3#122'
                     },
                     length: 4,
-                    limitTime: '13:30-16:35'
+                    limitTime: '13:30—17:00'
                 },
                 9: {
                     name: "机器学习",
@@ -285,7 +285,7 @@
                             num: '东 3#426'
                     },
                     length: 2,
-                    limitTime: '18:20-19:45'
+                    limitTime: '18:20—19:45'
                 }
             },
             5: {
@@ -297,7 +297,7 @@
                             num: '东 3#426'
                     },
                     length: 2,
-                    limitTime: '8:30-9:55'
+                    limitTime: '8:30—9:55'
                 },
                 3: {
                     name: "大数据基础",
@@ -307,7 +307,7 @@
                             num: '东 3#426'
                     },
                     length: 2,
-                    limitTime: '10:05-11:30'
+                    limitTime: '10:05—11:30'
                 }
             }
         }
