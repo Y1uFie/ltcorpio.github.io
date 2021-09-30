@@ -210,28 +210,38 @@
                     },
                     length: 2,
                     limitTime: '13:30—14:55'
+                },
+                7: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '必需的',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 2,
+                    limitTime: '15:05—16:35'
+                },
+                9: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '周一至周三任意 2 日必需',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 2,
+                    limitTime: '16:20—21:00'
                 }
             },
             2: {
                 1: {
-                    name: "数据采集与处理",
-                    teacher_name: "但雨芳",
-                    class: {
-                        type: "东校区",
-                            num: '东 3#426'
-                    },
-                    length: 2,
-                    limitTime: '8:30—9:55'
-                },
-                3: {
                     name: "大数据基础",
                     teacher_name: "何颂颂",
                     class: {
                         type: "东校区",
                             num: '东 3#426'
                     },
-                    length: 2,
-                    limitTime: '10:05—11:30'
+                    length: 4,
+                    limitTime: '8:30—11:30'
                 },
                 5: {
                     name: "计算机网络基础",
@@ -243,8 +253,38 @@
                     length: 2,
                     limitTime: '13:30—14:55'
                 },
+                7: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '必需的',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 2,
+                    limitTime: '15:05—16:35'
+                },
+                9: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '周一至周三任意 2 日必需',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 2,
+                    limitTime: '16:20—21:00'
+                }
             },
             3: {
+                1: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '非必需的',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 4,
+                    limitTime: '8:30—11:30'
+                },
                 5: {
                     name: "数据可视化",
                     teacher_name: "何颂颂",
@@ -254,6 +294,26 @@
                     },
                     length: 2,
                     limitTime: '13:30—14:55'
+                },
+                7: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '必需的',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 2,
+                    limitTime: '15:05—16:35'
+                },
+                9: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '周一至周三任意 2 日必需',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
+                    },
+                    length: 2,
+                    limitTime: '16:20—21:00'
                 }
             },
             4: {
@@ -269,13 +329,13 @@
                 },
                 5: {
                     name: "【活动】大数据工作坊活动",
-                    teacher_name: '何颂颂／赵宝奇',
+                    teacher_name: '必需的／集中性',
                     class: {
                         type: "东校区",
                             num: '东 3#122'
                     },
                     length: 4,
-                    limitTime: '13:30—17:00'
+                    limitTime: '13:30—16:35'
                 },
                 9: {
                     name: "机器学习",
@@ -296,19 +356,29 @@
                         type: "东校区",
                             num: '东 3#426'
                     },
-                    length: 2,
-                    limitTime: '8:30—9:55'
+                    length: 4,
+                    limitTime: '8:30—11:30'
                 },
-                3: {
-                    name: "大数据基础",
-                    teacher_name: "何颂颂",
+                5: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '任意 2 节课必需',
                     class: {
                         type: "东校区",
-                            num: '东 3#426'
+                            num: '东 3#122'
+                    },
+                    length: 4,
+                    limitTime: '13:30—16:35'
+                },
+                9: {
+                    name: "【活动】大数据工作坊活动",
+                    teacher_name: '非必需的',
+                    class: {
+                        type: "东校区",
+                            num: '东 3#122'
                     },
                     length: 2,
-                    limitTime: '10:05—11:30'
-                }
+                    limitTime: '16:20—21:00'
+                },
             }
         }
     });
