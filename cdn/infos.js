@@ -14,14 +14,14 @@ function l(c, t, n, clsname, intext, tech) {
     var elm = document.getElementById(id);
     if (t == "1") {
         var time = "08:30—09:55";
-        // } else if (t == "1-2") {
-        //     var time = "08:30—11:30";
+    } else if (t == "1-2") {
+        var time = "08:30—11:30";
     } else if (t == "2") {
         var time = "10:05—11:30";
     } else if (t == "3") {
         var time = "13:30—14:55";
-        // } else if (t == "3-4") {
-        //     var time = "13:30—16:35";
+    } else if (t == "3-4") {
+        var time = "13:30—16:35";
     } else if (t == "4") {
         var time = "15:05—16:35";
     } else if (t == "5") {
