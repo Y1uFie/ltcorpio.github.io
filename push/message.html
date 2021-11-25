@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>推送消息至 iPhone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../cdn/index.css">
+    <style>
+        a {
+            text-decoration: none !important;
+        }
+        
+        .form-check {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .form-check .form-check-label {
+            display: inline-block;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        
+        .wrap {
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        .statusOutput {
+            background-color: #fff !important;
+            overflow: hidden;
+        }
+        
+        .layui-layer-title {
+            text-align: left;
+        }
+        
+        .layui-layer-content {
+            font-size: 16px !important;
+            text-align: justify !important;
+        }
+        
+        .layui-layer-btn0 {
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: #EBEDEF;">
+    <div class="body">
+        <h2 style="font-size: 1.5em;"><a href="../index.html">首页</a>／推送消息至 iPhone</h2>
+    </div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="jumbotron" style="background-color: #F8F9F9;" id="discription">
+            <span>请填写以下表单以推送消息给 LTcorpio，其中“推送内容”为必填项，其它为选填项。</span><br>
+            <span class="high">特别注意：</span>推送的内容不能太复杂，也不能太长，否则将无法成功推送。<br>
+            <span>添加时间：2021 年 11 月 25 日</span><br>
+        </div>
+        <div class="wrap" style="background-color: #F8F9F9;">
+            <div class="container-top" id="list" style="padding: 20px;">
+                <div class="tab-content" id="pills-tabContent">
+                    <form id="form">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text high">推送设备</span>
+                            </div>
+                            <select id="pushDevice" class="form-select">
+                                <option selected value="cKmqmUBKKyzSYt5CCgDxED">LTcorpio（默认）</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">推送标题</span>
+                            </div>
+                            <input type="text" class="form-control" id="Title" placeholder="请输入推送标题">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text high">推送内容</span>
+                            </div>
+                            <input type="text" class="form-control" id="Content" placeholder="请输入推送内容（必填）">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">推送铃声</span>
+                            </div>
+                            <select id="Alarm" class="form-select">
+                                  <option value="alarm">alarm</option>
+                                  <option value="anticipate">anticipate</option>
+                                  <option value="bell">bell</option>
+                                  <option value="birdsong">birdsong</option>
+                                  <option value="bloom">bloom</option>
+                                  <option value="calypso">calypso</option>
+                                  <option value="chime">chime</option>
+                                  <option value="choo">choo</option>
+                                  <option value="descent">descent</option>
+                                  <option value="electronic">electronic</option>
+                                  <option value="fanfare">fanfare</option>
+                                  <option value="glass">glass</option>
+                                  <option value="gotosleep">gotosleep</option>
+                                  <option value="healthnotification">healthnotification</option>
+                                  <option value="horn">horn</option>
+                                  <option value="ladder">ladder</option>
+                                  <option value="mailsent">mailsent</option>
+                                  <option value="minuet">minuet</option>
+                                  <option value="multiwayinvitation">multiwayinvitation</option>
+                                  <option value="newmail">newmail</option>
+                                  <option value="newsflash">newsflash</option>
+                                  <option value="noir">noir</option>
+                                  <option value="paymentsuccess">paymentsuccess</option>
+                                  <option value="shake">shake</option>
+                                  <option value="sherwoodforest">sherwoodforest</option>
+                                  <option value="silence">silence</option>
+                                  <option value="spell">spell</option>
+                                  <option value="suspense">suspense</option>
+                                  <option value="telegraph">telegraph</option>
+                                  <option value="tiptoes">tiptoes</option>
+                                  <option selected value="">tritone（默认）</option>
+                                  <option value="typewriters">typewriters</option>
+                                  <option value="update">update</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">消息归档</span>
+                            </div>
+                            <input type="text" class="form-control" id="Group" placeholder="请输入消息类别">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">URL</span>
+                            </div>
+                            <input type="text" class="form-control" id="url" placeholder="请输入点击消息后要跳转到的 URL 地址">
+                        </div>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label">
+                                <input id="Archives" type="checkbox" class="form-check-input" value="">是否自动保存推送信息
+                            </label>
+                            <label class="form-check-label">
+                              <input id="toClipboard" type="checkbox" class="form-check-input" value="">是否自动复制推送内容到（iOS 端）剪贴板
+                          </label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">提交并推送</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wrap" style="background-color: #F8F9F9;">
+            <div class="container-top" id="list" style="padding: 20px;">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">状态码</span>
+                    </div>
+                    <span class="input-group-text statusOutput form-control" id="statusCode">成功推送后，将在这里返回状态码，返回值为 200 则推送成功</span>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">推送状态</span>
+                    </div>
+                    <span class="input-group-text statusOutput form-control" id="status">成功推送后，将在这里返回推送状态，状态为 success 则推送成功</span>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">推送时间</span>
+                    </div>
+                    <span class="input-group-text statusOutput form-control" id="pushTime">成功推送后，将在这里返回推送完毕后的时间</span>
+                </div>
+                <span class="high">消息推送可能因网络或服务器的问题而存在延迟，推送成功后请耐心等待手机通知。</span>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; LTcorpio 版权所有 · All Rights Reserved.</footer>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/layui/2.5.6/layui.all.js"></script>
+    <script src="message.js"></script>
+</body>
+
+</html>
