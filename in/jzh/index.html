@@ -7,42 +7,9 @@
     <meta name="renderer" content="webkit">
     <meta name="format-detection" content="telephone=no" />
     <title>疫情期间校园通行证</title>
-    <script>
-        function _report_js_error(s) {
-            var url = '/weixin/report/s?' + encodeURIComponent(s);
-            var img = new Image;
-            img.onload = img.onerror = function() {
-                img = null;
-            };
-            img.src = url;
-        }
-        window.onerror = function(msg, url, line, columnNumber, errorObj) {
-            var m = [location.href, url, msg, line, navigator.userAgent, +new Date];
-            var s = JSON.stringify(m);
-            var url = 'https://wx.app.nbpt.edu.cn/weixin/report/s?' + encodeURIComponent(s);
-            var img = new Image;
-            img.onload = img.onerror = function() {
-                img = null;
-            };
-            img.src = url;
-        }
-    </script>
+
     <link rel="stylesheet" type="text/css" href="https://wx.app.nbpt.edu.cn/content/weixin/base.css?v=2005231554" />
     <link rel="stylesheet" type="text/css" href="https://wx.app.nbpt.edu.cn/content/weixin/weui.min.css?v=2010260852" />
-
-    <script type="text/javascript" src="https://wx.app.nbpt.edu.cn/content/weixin/jquery-2.2.1.js?v=2002211049" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" crossorigin="anonymous"><\/script>')
-    </script>
-
-    <script type="text/javascript" src="https://wx.app.nbpt.edu.cn/content/weixin/base1.js?v=2002211049" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="https://wx.app.nbpt.edu.cn/content/weixin/weui.1.1.4.min.js?v=2010120420" crossorigin="anonymous"></script>
-    <script>
-        weui || document.write('<script src="//res.wx.qq.com/open/libs/weuijs/1.1.4/weui.min.js" crossorigin="anonymous"><\/script>')
-    </script>
-
-    <script type="text/javascript" src="https://wx.app.nbpt.edu.cn/content/weixin/weui.ext.js?v=2004121821" crossorigin="anonymous"></script>
 
     <style type="text/css">
         html,
@@ -104,6 +71,11 @@
             color: #fff;
         }
         
+        .body .user.yellow {
+            background-color: #deff4d;
+            color: #222;
+        }
+        
         .body .user.red {
             background-color: #FF4D4F;
             color: #fff;
@@ -121,18 +93,14 @@
             margin-top: 10px;
         }
     </style>
-    <script type="text/javascript" src="https://wx.app.nbpt.edu.cn/content/xsbd/qrcode.js?v=1708110043" crossorigin="anonymous"></script>
 
     <body>
-
         <div class="body">
             <div class="date" id="timeShow">Loading……</div>
-
-            <div class="text" style="font-size:.5rem;background-color:#FFAA3E;color:#fff;text-align:center;font-weight:bold;">
+            <div class="text" id="Welcome" style="font-size:.5rem;background-color:#FFAA3E;color:#fff;text-align:center;font-weight:bold;">
                 同学你好，欢迎返校！
             </div>
-
-            <div class="user green">
+            <div class="user green" id="YQStatus">
                 <div class="avatar">
                     <img src="https://wx.app.nbpt.edu.cn/image/student/2016183112.jpg@160w_160h.jpg" style="width:100%;height:100%;" />
                 </div>
@@ -140,8 +108,6 @@
                 <div class="department">电子信息工程学院</div>
                 <div class="department">人工智能3201</div>
             </div>
-
-
         </div>
 
         <script>
@@ -160,7 +126,6 @@
             }
             $(window).resize(setHtmlFontsize).resize();
         </script>
-
 
         <script>
             var t = setTimeout(time, 1000);
@@ -181,6 +146,23 @@
                 document.getElementById("timeShow").innerHTML = y + "年" + m + "月" + d + "日" + " " + hh + ":" + mm + ":" + ss;
                 t = setTimeout(time, 1000);
             }
+        </script>
+
+        <script>
+            var colors = ['user green', 'user yellow', 'user red'];
+            var WelcomeSentence = ["同学你好，欢迎返校！", "同学你好，我不认识你！", "同学你好，我是傻逼！"];
+            var i = 0;
+
+            function changeBg() {
+                var color = colors.shift();
+                colors.push(color);
+                document.getElementById('YQStatus').setAttribute("class", color);
+
+                document.getElementById('Welcome').innerHTML = WelcomeSentence[i];
+                i = i + 1;
+                if (i == 3) i = 0;
+            }
+            setInterval('changeBg()', 100);
         </script>
     </body>
 
