@@ -175,9 +175,9 @@
             function changeBg() {
                 var color = colors.shift();
                 colors.push(color);
-                //document.getElementById('YQStatus').setAttribute("class", color);
+                document.getElementById('YQStatus').setAttribute("class", color);
 
-                //document.getElementById('Welcome').innerHTML = WelcomeSentence[i];
+                document.getElementById('Welcome').innerHTML = WelcomeSentence[i];
                 i = i + 1;
                 if (i == 3) i = 0;
             }
