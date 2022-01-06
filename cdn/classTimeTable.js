@@ -181,32 +181,22 @@
         selector: "#class-table",
         data: {
             1: {
-                1: {
-                    name: "微信公众平台开发",
-                    teacher_name: "周军强",
-                    class: {
-                        type: "东校区",
-                            num: '东 3#418'
-                    },
-                    length: 2,
-                    limitTime: '8:30—9:55'
-                },
                 3: {
-                    name: "Java 程序设计",
-                    teacher_name: '陈磊',
+                    name: "Java Web 应用开发",
+                    teacher_name: '周亚峰',
                     class: {
                         type: "东校区",
-                            num: '东 3#418'
+                            num: ''
                     },
                     length: 2,
                     limitTime: '10:05—11:30'
                 },
                 5: {
-                    name: "机器学习",
-                    teacher_name: "陶剑文",
+                    name: "*图像处理技术",
+                    teacher_name: "但雨芳",
                     class: {
                         type: "东校区",
-                            num: '东 3#426'
+                            num: ''
                     },
                     length: 2,
                     limitTime: '13:30—14:55'
@@ -214,70 +204,100 @@
             },
             2: {
                 1: {
-                    name: "大数据基础",
-                    teacher_name: "何颂颂",
+                    name: "*深度学习基础",
+                    teacher_name: "潘婕",
                     class: {
                         type: "东校区",
-                            num: '东 3#426'
+                            num: ''
                     },
-                    length: 4,
-                    limitTime: '8:30—11:30'
+                    length: 2,
+                    limitTime: '8:30—9:55'
+                },
+                3: {
+                    name: "智能电子产品制作",
+                    teacher_name: "翁芸",
+                    class: {
+                        type: "东校区",
+                            num: ''
+                    },
+                    length: 2,
+                    limitTime: '10:05—11：30'
                 },
                 5: {
-                    name: "计算机网络基础",
-                    teacher_name: "竺士蒙",
+                    name: "*大数据分析",
+                    teacher_name: "赵宝奇",
                     class: {
                         type: "东校区",
-                            num: '东 3#411'
+                            num: ''
                     },
                     length: 2,
                     limitTime: '13:30—14:55'
                 }
             },
             3: {
-                5: {
-                    name: "数据可视化",
-                    teacher_name: "何颂颂",
+                1: {
+                    name: "Java Web 应用开发",
+                    teacher_name: '周亚峰',
                     class: {
                         type: "东校区",
-                            num: '东 3#426'
+                            num: ''
+                    },
+                    length: 2,
+                    limitTime: '8:30—9:55'
+                },
+                5: {
+                    name: "*图像处理技术",
+                    teacher_name: "但雨芳",
+                    class: {
+                        type: "东校区",
+                            num: ''
                     },
                     length: 2,
                     limitTime: '13:30—14:55'
                 }
             },
             4: {
-                3: {
-                    name: "Java 程序设计",
-                    teacher_name: '陈磊',
+                1: {
+                    name: "机器人控制技术",
+                    teacher_name: '胡国伟',
                     class: {
                         type: "东校区",
-                            num: '东 3#418'
+                            num: ''
+                    },
+                    length: 2,
+                    limitTime: '8:30—9:55'
+                },
+                3: {
+                    name: "*大数据分析",
+                    teacher_name: "赵宝奇",
+                    class: {
+                        type: "东校区",
+                            num: ''
+                    },
+                    length: 2,
+                    limitTime: '10:05—11:30'
+                }
+            },
+            5: {
+                3: {
+                    name: "“1+X”证书考证辅导",
+                    teacher_name: "-",
+                    class: {
+                        type: "东校区",
+                            num: ''
                     },
                     length: 2,
                     limitTime: '10:05—11:30'
                 },
-                9: {
-                    name: "机器学习",
-                    teacher_name: "陶剑文",
+                5: {
+                    name: "*深度学习基础",
+                    teacher_name: "潘婕",
                     class: {
                         type: "东校区",
-                            num: '东 3#426'
+                            num: ''
                     },
                     length: 2,
-                    limitTime: '18:20—19:45'
-                }
-            },
-            5: {
-                1: {
-                    name: "数据采集与处理",
-                    teacher_name: "但雨芳",
-                    class: {
-                        type: "东校区",
-                            num: '东 3#426'
-                    },
-                    length: 4,
-                    limitTime: '8:30—11:30'
+                    limitTime: '13:30—14:55'
                 }
             }
         }
